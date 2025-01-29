@@ -9,8 +9,8 @@ const App = ()=> {
     return (
         <>
           <Header />
-          <NewsList />
-          <h1>Hello world!</h1>
+         {/* <NewsList />
+          <h1>Hello world!</h1> */}
         </>
     )
 }
