@@ -13,12 +13,21 @@
 //     }
 // }
 
-const Header=()=>{
+const Header=(event)=>{
+    const onChangeHandeler=()=>{
+        console.log(event.target )
+
+    }
 
     return(        
         <header >
-           <div className="logo">LOGO</div>
-             <input/>
+           <div className="logo" onClick={()=>console.log('i was click')}
+            onPointerEnter={e => console.log('onPointerEnter')}>
+                LOGO
+            </div>
+             <input onChange={onChangeHandeler}
+             onFocus={e => console.log('on focus')}
+             onBlur={e => console.log('on blur')}/>
        </header>
    )
  }
