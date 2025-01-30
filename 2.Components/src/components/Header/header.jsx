@@ -12,22 +12,22 @@
 //             </header>)
 //     }
 // }
-
+import Navigation from './nav';
 const Header=(event)=>{
     const onChangeHandeler=()=>{
-        console.log(event.target )
+        console.log(event.target.value )
 
     }
 
     return(        
         <header >
-           <div className="logo" onClick={()=>console.log('i was click')}
+            
+           <div className="logo" 
             onPointerEnter={e => console.log('onPointerEnter')}>
-                LOGO
+                Something New
             </div>
-             <input onChange={onChangeHandeler}
-             onFocus={e => console.log('on focus')}
-             onBlur={e => console.log('on blur')}/>
+             <input onChange={onChangeHandeler}/>
+             <Navigation />
        </header>
    )
  }
