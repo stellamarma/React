@@ -1,9 +1,8 @@
+import {navItems} from "../utils/data"
+
+
 const Nav =()=>{
-    const navItems =[
-        {id:"1",link:"/articles",title:"Articles"},
-        {id:"2",link:"/videos",title:"Videos"},
-        {id:"3",link:"/movies",title:"Movies"},
-    ]
+
 
   return(  
   <nav className="mainNav">
@@ -14,7 +13,7 @@ const Nav =()=>{
                  </li>
             ))}
 
-                </ul>
+        </ul>
     </nav>
   )
 

@@ -3,14 +3,16 @@ import 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header/header';
 //import NewsList from './components/news_list';
+import StatePlayground from './components/playground/state'
 
 const App = ()=> {
 
     return (
         <>
           <Header />
-         {/* <NewsList />
-          <h1>Hello world!</h1> */}
+          <div className='container'>
+            <StatePlayground />
+          </div>
         </>
     )
 }
