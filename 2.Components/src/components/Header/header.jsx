@@ -13,13 +13,17 @@
 //     }
 // }
 
-
+import { useState } from 'react';
 import Navigation from './nav';
+
+
 
 const Header=()=>{
 
+    let [keywords,setKeywords] =useState('');
+
     const onChangeHandeler=(event)=>{
-        console.log(event.target.value);
+        setKeywords(event.target.value);
 
     }
 
@@ -32,6 +36,7 @@ const Header=()=>{
              <input 
                 onChange={onChangeHandeler}
             />
+            The keywords are : {keywords}
             <Navigation/>
        </header>
 
