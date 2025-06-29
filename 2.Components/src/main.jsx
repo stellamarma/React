@@ -15,7 +15,10 @@ const App = ()=> {
           <Header />
           <div className='container'>
             {/* <StatePlayground /> */}
-            <NewsList news={news}/>
+            <NewsList news={news}>
+            <br/>
+            <h1>I am a children </h1>
+            </NewsList>
           </div>
         </>
     )

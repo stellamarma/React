@@ -6,9 +6,11 @@ const NewsList=(props)=>{
         <NewListItem key={item.id} item={item}/>
     ));
 
+
     return(
         <>
             { newsHandler}
+            {props.children}
         </>
     )
 }
