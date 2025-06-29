@@ -10,7 +10,6 @@ const NewsList=(props)=>{
     return(
         <>
             { newsHandler}
-            {props.children}
         </>
     )
 }

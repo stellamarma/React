@@ -20,15 +20,18 @@ import Navigation from './nav';
 
 const Header=()=>{
 
+    let [active,setActive]= useState(false);
     let [keywords,setKeywords] =useState('');
 
     const onChangeHandeler=(event)=>{
         setKeywords(event.target.value);
-
+        setActive(true)
     }
 
     return(        
-        <header >
+        <header style={{background:
+            `${active ? 'green':'blue'}`
+        }}>
             
            <div className="logo" >
                 Awesome News
