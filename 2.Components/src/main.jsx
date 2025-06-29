@@ -9,7 +9,6 @@ const App = ()=> {
 
   let [news, setNews]= useState(newsData)
 
-  console.log(newsData)
 
     return (
         <>

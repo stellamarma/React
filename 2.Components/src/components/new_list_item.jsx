@@ -1,8 +1,12 @@
-const NewListItem =()=>(
+const NewListItem =({item})=>(
 
-    <div>
-        News list item
-    </div>
+        <div className="news_item">
+            <h3>{item.title}</h3>
+            <div>
+             {item.feed}
+            </div>
+
+        </div>
 );
 
 export default NewListItem;
