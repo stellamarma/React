@@ -1,5 +1,4 @@
-
-import 'react';
+import React,{useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header/header';
 import NewsList from './components/news_list';
@@ -8,6 +7,8 @@ import {newsData} from './components/utils/data'
 
 const App = ()=> {
 
+  let [news, setNews]= useState(newsData)
+
   console.log(newsData)
 
     return (
@@ -15,7 +16,7 @@ const App = ()=> {
           <Header />
           <div className='container'>
             {/* <StatePlayground /> */}
-            <NewsList/>
+            <NewsList news={news}/>
           </div>
         </>
     )

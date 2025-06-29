@@ -1,10 +1,14 @@
 import NewListItem from "./new_list_item";
 
-const NewsList=()=>(
+const NewsList=(props)=>{
 
-    <div>
-        <NewListItem />
-    </div>
-);
+    console.log(props.news)
+
+    return(
+        <div>
+            <NewListItem />
+        </div>
+    )
+}
 
 export default NewsList;
